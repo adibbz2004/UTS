@@ -10,7 +10,7 @@ public class pajak22 {
         System.out.println("NIM : 2341720214");
         System.out.println("Kelas/Absen : 1F/22 ");
 
-        System.out.print("Apakah Anda memiliki usaha? (ya/tidak): ");
+        System.out.print("Apakah Anda memiliki usaha? (y/tdk): ");
         String memilikiUsaha = scanner.nextLine();
 
         double penghasilan = 0;
@@ -34,15 +34,15 @@ public class pajak22 {
             totalHarta += nilaiJual;
         }
 
-        System.out.print("Apakah Anda sudah berkeluarga? (ya/tidak): ");
+        System.out.print("Apakah Anda sudah memiliki keluarga? (y/tk): ");
         String berkeluarga = scanner.nextLine();
 
         double potonganPajak = 0;
         if (berkeluarga.equalsIgnoreCase("ya")) {
-            System.out.println("Berapa anak Anda yang berstatus kuliah?");
+            System.out.println("Berapa anak Anda yang kuliah?");
             int anakKuliah = scanner.nextInt();
 
-            System.out.println("Berapa anak Anda yang berstatus SMA?");
+            System.out.println("Berapa anak Anda yang SMA?");
             int anakSMA = scanner.nextInt();
 
             if (anakKuliah == 1 && anakSMA == 1 && totalHarta >= 50000000) {
